@@ -19,6 +19,7 @@ anomaly_rag_studio/
 ├── Dockerfile            # Container build instructions (Python 3.10 slim)
 ├── docker-compose.yml    # Service orchestration and volume mounting
 └── chroma_db/            # Persistent vector database directory
+```
 
 ---
 
