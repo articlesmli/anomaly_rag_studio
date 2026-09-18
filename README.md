@@ -1,6 +1,6 @@
 # Autonomous Anomaly RAG Studio
 
-A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container.
+A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring the sensitive logs never leave the local environment or container.
 
 ## Tech Stack
 * **Orchestration:** Docker & Docker Compose
@@ -40,5 +40,5 @@ docker compose up --build
 ```
 
 
-3. Open your browser at **`http://localhost:8501`**
+3. Open the browser at **`http://localhost:8501`**
 
