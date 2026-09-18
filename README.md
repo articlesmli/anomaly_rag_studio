@@ -47,44 +47,6 @@ anomaly_rag_studio/
 
 ---
 
-## Configuration Files
-
-### `Dockerfile`
-
-```dockerfile
-FROM python:3.10-slim
-
-WORKDIR /app
-
-RUN apt-get update && apt-get install -y --no-install-recommends build-essential
-
-RUN pip install --no-cache-dir langchain-core langchain-community langchain-chroma sentence-transformers
-
-COPY . /app
-
-CMD ["python3", "detect_anomalies.py"]
-
-```
-
-### `docker-compose.yml`
-
-```yaml
-version: '3.8'
-
-services:
-  anomaly_engine:
-    build: .
-    container_name: anomaly_rag_engine
-    volumes:
-      - ./chroma_db:/app/chroma_db
-      - ./:/app
-    environment:
-      - PYTHONUNBUFFERED=1
-
-```
-
----
-
 ## Execution Guide
 
 ### Prerequisites
