@@ -19,3 +19,25 @@ anomaly_rag_studio/
 ├── Dockerfile            # Container build instructions (Python 3.10 slim)
 ├── docker-compose.yml    # Service orchestration and volume mounting
 └── chroma_db/            # Persistent vector database directory
+
+---
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone [https://github.com/articlesmli/anomaly_rag_studio.git](https://github.com/articlesmli/anomaly_rag_studio.git)
+cd anomaly_rag_studio
+
+```
+
+
+2. Build and run the container:
+```bash
+docker compose up --build
+
+```
+
+
+3. Open your browser at **`http://localhost:8501`**
+
