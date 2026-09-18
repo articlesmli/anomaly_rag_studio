@@ -1,8 +1,8 @@
-# 🔍 Autonomous Anomaly RAG Studio
+# Autonomous Anomaly RAG Studio
 
 A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Orchestration:** Docker & Docker Compose
 * **Frontend/Dashboard:** Streamlit
 * **Vector Database:** ChromaDB (Persisted locally)
@@ -11,7 +11,7 @@ A fully containerized, local Retrieval-Augmented Generation (RAG) system designe
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```text
 anomaly_rag_studio/
 ├── app.py                # Streamlit web interface & RAG pipeline runner
