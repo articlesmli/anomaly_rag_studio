@@ -115,37 +115,3 @@ To scan for system anomalies and retrieve historical vector context:
 docker compose up --build
 
 ```
-
-
-
----
-
-## Sample Diagnostic Output
-
-```text
-Connected to ChromaDB vector store successfully.
-
-[ALERT] Anomaly Detected matching trigger criteria: 'ERROR Database connection timeout'
-Running vector similarity search to fetch related historical context...
-
---- Autonomous RAG Diagnostic Summary ---
-Trigger Event: ERROR Database connection timeout
-Retrieved Context from Vector Database:
-  [Context Log 1]: 2026-09-18 10:10:45 ERROR Database connection timeout on /api/v1/data
-  [Context Log 2]: 2026-09-18 10:10:45 ERROR Database connection timeout on /api/v1/data
-
-[AI Insight]: Superset/System telemetry indicates a database timeout anomaly. Historical context shows correlated high memory or timeout warnings. Recommended Action: Check database container resource limits and connection pool limits.
-
-```
-
-```
-
----
-
-### How to Update Your Local File and Push:
-1. Overwrite your local `README.md` file with the exact text above.
-2. Run these git commands in your terminal:
-   ```bash
-   git add README.md
-   git commit -m "Enhance README with precise architecture, configuration, and execution docs"
-   git push -u origin main
