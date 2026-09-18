@@ -4,8 +4,8 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 
-# Install modern modular langchain packages
-RUN pip install --no-cache-dir langchain-core langchain-community langchain-chroma sentence-transformers
+# Install required packages with pinned transformers version for text2text-generation support
+RUN pip install --no-cache-dir langchain-core langchain-community langchain-chroma sentence-transformers "transformers<5" torch streamlit
 
 COPY . /app
 
