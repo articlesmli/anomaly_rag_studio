@@ -1,4 +1,4 @@
-# Autonomous RAG & Anomaly Insight Engine 
+# Autonomous RAG and Anomaly Insight Engine 
 
 A containerized, intelligent observability pipeline that ingests system logs, indexes them into a local vector store, executes automated anomaly detection, and triggers context-aware RAG-based diagnostic summaries.
 
