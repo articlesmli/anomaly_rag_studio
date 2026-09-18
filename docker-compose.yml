@@ -1,0 +1,9 @@
+services:
+  anomaly_engine:
+    build: .
+    container_name: anomaly_rag_engine
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
