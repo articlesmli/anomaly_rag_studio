@@ -1,14 +1,14 @@
 # Autonomous Anomaly RAG Studio[cite: 7]
 
-A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics[cite: 7]. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container[cite: 7].
+A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container.
 
 ## Tech Stack
-* **Orchestration:** Docker & Docker Compose[cite: 7]
+* **Orchestration:** Docker & Docker Compose
 * **CI/CD Automation:** GitHub Actions (`.github/workflows/ci-cd.yml`)
-* **Frontend/Dashboard:** Streamlit[cite: 7]
-* **Vector Database:** ChromaDB (Persisted locally)[cite: 7]
-* **Embeddings:** HuggingFace `all-MiniLM-L6-v2`[cite: 7]
-* **Local LLM:** Google `flan-t5-small` via HuggingFace Pipelines[cite: 7]
+* **Frontend/Dashboard:** Streamlit
+* **Vector Database:** ChromaDB (Persisted locally)
+* **Embeddings:** HuggingFace `all-MiniLM-L6-v2`
+* **Local LLM:** Google `flan-t5-small` via HuggingFace Pipelines
 
 ---
 
@@ -23,7 +23,7 @@ anomaly_rag_studio/
 ├── ingest_logs.py        # Log ingestion and vector database creation script
 ├── Dockerfile            # Container build instructions (Python 3.10 slim)[cite: 7]
 ├── docker-compose.yml    # Service orchestration and volume mounting[cite: 7]
-└── chroma_db/            # Persistent vector database directory[cite: 7]
+└── chroma_db/            # Persistent vector database directory
 
 ```
 
@@ -49,4 +49,3 @@ docker compose up --build
 3. **Access the dashboard:**
 Open your browser at **`http://localhost:8501`**
 
-```
