@@ -1,6 +1,6 @@
-# Autonomous Anomaly RAG Studio[cite: 7]
+# Autonomous Anomaly RAG Studio
 
-A fully containerized, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container.
+A fully containerised, local Retrieval-Augmented Generation (RAG) system designed for automated system log analysis and AI-powered infrastructure diagnostics. It runs completely offline using lightweight local models, ensuring your sensitive logs never leave your local environment or container.
 
 ## Tech Stack
 * **Orchestration:** Docker & Docker Compose
@@ -18,11 +18,11 @@ anomaly_rag_studio/
 ├── .github/
 │   └── workflows/
 │       └── ci-cd.yml     # Automated CI/CD test and Docker build pipeline
-├── app.py                # Streamlit web interface & RAG pipeline runner[cite: 7]
-├── detect_anomalies.py   # Headless anomaly detection and triage script[cite: 7]
+├── app.py                # Streamlit web interface & RAG pipeline runner
+├── detect_anomalies.py   # Headless anomaly detection and triage script
 ├── ingest_logs.py        # Log ingestion and vector database creation script
-├── Dockerfile            # Container build instructions (Python 3.10 slim)[cite: 7]
-├── docker-compose.yml    # Service orchestration and volume mounting[cite: 7]
+├── Dockerfile            # Container build instructions (Python 3.10 slim)
+├── docker-compose.yml    # Service orchestration and volume mounting
 └── chroma_db/            # Persistent vector database directory
 
 ```
